@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap');
+/* Aquí definimos las Custom properties */
+:root{
+  --negro         : #393939;
+  --blanco        : #ececec;
+  --sombra-ppal   : #c9c9c9;
+  --sombra-sec    : #ffffff;
+  --borde-negro   : #00000050;
+
+  --marcado       : rgb(127, 195, 255);
+
+  /* Tipografía */
+  --tipo-principal  : Helvetica, Arial, sans-serif;
+}
+  
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root{
+      --negro         : #ececec;
+      --blanco        : #303030;
+      --sombra-ppal   : #242424;
+      --sombra-sec    : #3c3c3c;
+
+      --borde-negro   : #FFFFFF50;
+  }
+}
